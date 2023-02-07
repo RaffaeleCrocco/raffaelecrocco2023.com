@@ -50,7 +50,7 @@ const Home = () => {
       <Row className="projects">
         <Col className="d-flex align-items-end">
           <div>
-            <p className="subtitle">Help-ukrainians.org</p>
+            <p className="subtitle">Help-ukrainians</p>
             <p className="text">
               E' un servizio gratuito a disposizione dei cittadini che permette
               la condivisione di iniziative benefiche a supporto del popolo
