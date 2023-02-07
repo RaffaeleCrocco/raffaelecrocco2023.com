@@ -1,0 +1,98 @@
+$dark: #1e1e1e;
+$text: #d9d9d9;
+body {
+  background: $dark;
+  color: $text;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+body {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+
+  //Hiding scroll bar in the website in IE, Edge, Firefox
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+}
+
+//Hiding scroll bar in the website in Chrome, Safari, and Opera
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+.title {
+  p {
+    font-style: italic;
+    font-weight: 400;
+  }
+  font-style: normal;
+  font-weight: 900;
+  font-size: 128px;
+  line-height: 88.52%;
+  letter-spacing: -0.015em;
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 88.52%;
+  margin-bottom: 51px;
+  letter-spacing: -0.015em;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 113.52%;
+}
+
+.hero {
+  min-height: 70vh;
+  padding: 10% 10% 0px 10%;
+  img {
+    height: 400px;
+  }
+}
+.aboutme {
+  min-height: 50vh;
+  padding: 2.5% 10% 0px 10%;
+  img {
+    height: 400px;
+  }
+}
+.projects {
+  min-height: 100vh;
+  padding: 10% 10% 0px 10%;
+  .col {
+    padding: 20px;
+  }
+  .white-col {
+    background: $text;
+    border-radius: 22px;
+    color: $dark;
+  }
+  img {
+    margin-top: 36px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+}
+
+.uni-projects {
+  min-height: 20vh;
+  margin: 5% 10% 10% 10%;
+  background: $text;
+  border-radius: 22px;
+  color: $dark;
+  p {
+    width: 40%;
+    padding-right: 5%;
+  }
+}
