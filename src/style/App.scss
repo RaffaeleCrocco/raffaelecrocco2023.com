@@ -37,6 +37,9 @@ body::-webkit-scrollbar {
   font-size: 128px;
   line-height: 88.52%;
   letter-spacing: -0.015em;
+  @media only screen and (max-width: 600px) {
+    font-size: 46px;
+  }
 }
 
 .subtitle {
@@ -54,10 +57,16 @@ body::-webkit-scrollbar {
 }
 
 .hero {
-  min-height: 70vh;
+  min-height: 72vh;
   padding: 10% 10% 0px 10%;
   img {
-    height: 400px;
+    height: 80%;
+  }
+  @media only screen and (max-width: 600px) {
+    min-height: 50vh;
+    img {
+      width: 80%;
+    }
   }
 }
 .aboutme {
@@ -65,6 +74,9 @@ body::-webkit-scrollbar {
   padding: 2.5% 10% 0px 10%;
   img {
     height: 400px;
+    @media only screen and (max-width: 600px) {
+      height: 50%;
+    }
   }
 }
 .projects {
@@ -72,6 +84,7 @@ body::-webkit-scrollbar {
   padding: 10% 10% 0px 10%;
   .col {
     padding: 20px;
+    margin: 14px;
   }
   .white-col {
     background: $text;
@@ -94,5 +107,8 @@ body::-webkit-scrollbar {
   p {
     width: 40%;
     padding-right: 5%;
+    @media only screen and (max-width: 600px) {
+      width: 80%;
+    }
   }
 }

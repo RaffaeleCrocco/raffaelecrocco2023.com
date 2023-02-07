@@ -9,21 +9,25 @@ import uni from "../media/uni.svg";
 const Home = () => {
   return (
     <div className="Home">
-      <Row className="hero">
-        <Col className="d-flex justify-content-start">
+      <Row className="hero flex-column-reverse flex-md-row">
+        <Col xs="auto" md={8} className="d-flex justify-content-start">
           <div className="title">
             <p>UI designer</p>& WEB DEVELOPER
           </div>
         </Col>
-        <Col className="d-flex justify-content-end">
+        <Col
+          xs="auto"
+          md={4}
+          className="d-flex justify-content-start justify-content-md-end mb-5"
+        >
           <img src={logo} />
         </Col>
       </Row>
       <Row className="aboutme">
-        <Col xs="auto" className="d-flex align-items-center">
+        <Col xs="auto" className="d-none d-md-flex align-items-center">
           <img src={grafica1} />
         </Col>
-        <Col className="d-flex flex-column justify-content-center">
+        <Col className="d-flex flex-column justify-content-center mt-5">
           <div>
             <div className="subtitle">ABOUT ME</div>
             <div className="text">
@@ -85,7 +89,7 @@ const Home = () => {
           </div>
         </Col>
       </Row>
-      <div className="uni-projects d-flex justify-content-end align-items-center">
+      <div className="uni-projects d-md-flex justify-content-end align-items-center p-5">
         <p className="text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
