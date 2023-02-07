@@ -50,7 +50,7 @@ body::-webkit-scrollbar {
   letter-spacing: -0.015em;
   text-transform: uppercase;
   @media only screen and (max-width: 600px) {
-    font-size: 36px;
+    font-size: 32px;
   }
 }
 
@@ -89,7 +89,11 @@ body::-webkit-scrollbar {
   .col {
     padding: 20px;
     margin: 14px;
+    @media only screen and (max-width: 600px) {
+      border: 1px solid $text;
+    }
   }
+
   .white-col {
     background: $text;
     border-radius: 22px;
