@@ -31,22 +31,23 @@ const Home = () => {
           <div>
             <div className="subtitle">ABOUT ME</div>
             <div className="text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Studio ingegneria informatica all'Università di Trento. Questo
+              sito e i progetti al suo interno parlano di me e del mio viaggio
+              nel mondo della programmazione. Ecco come percepisco la
+              programmazione: come il modo più veloce per rendere reali le tue
+              idee.Duis aute irure dolor in reprehenderit in voluptate velit
+              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident, sunt in culpa qui officia
+              deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident, sunt in culpa qui officia
+              deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua.
             </div>
           </div>
         </Col>
@@ -54,36 +55,36 @@ const Home = () => {
       <Row className="projects">
         <Col className="d-flex align-items-end">
           <div>
-            <p className="subtitle">PROGETTO</p>
+            <p className="subtitle">Help-ukrainians.org</p>
             <p className="text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              E' un servizio gratuito a disposizione dei cittadini che permette
+              la condivisione di iniziative benefiche a supporto del popolo
+              ucraino. Condividiamo informazioni utili per il volontariato
+              attraverso enti verificati.
             </p>
             <img src={circlelight} />
           </div>
         </Col>
         <Col className="d-flex align-items-end">
           <div>
-            <p className="subtitle">PROGETTO</p>
+            <p className="subtitle">onlytech industries</p>
             <p className="text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              Azienda italiana con esperienza in Blockchain pubbliche e private
+              che attraverso l’utilizzo di un ampio stack tecnologico, offre
+              consulenza progettuale, sviluppo e integrazione di soluzioni
+              Blockchain, sicurezza, e scalabilità.
             </p>
             <img src={circlelight} />
           </div>
         </Col>
         <Col className="d-flex align-items-end white-col">
           <div>
-            <p className="subtitle">PROGETTO</p>
+            <p className="subtitle">Landing VendImpresa</p>
             <p className="text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              Landing che anticipa il portale VendImpresa, una realta
+              immobiliare innovativa per la compravendita di asset aziendali
+              composto da un gruppo di professionisti del settore che fanno
+              parte di una rete di aziende tecnologicamente avanzate.
             </p>
             <img src={circledark} />
           </div>
