@@ -5,6 +5,7 @@ import grafica1 from "../media/grafica1.svg";
 import circlelight from "../media/circle-light.svg";
 import circledark from "../media/circle-dark.svg";
 import uni from "../media/uni.svg";
+import { motion as m } from "framer-motion";
 
 const Home = () => {
   return (
@@ -20,7 +21,18 @@ const Home = () => {
           md={4}
           className="d-flex justify-content-start justify-content-md-end mb-5"
         >
-          <img src={logo} />
+          {/* <img src={logo} /> */}
+          <m.div className="logodiv">
+            <m.div
+            /*  animate={{
+                opacity: [0, 0.7, 1],
+              }}
+              transition={{
+                duration: 2,
+                times: [0.1, 0.4],
+              }} */
+            ></m.div>
+          </m.div>
         </Col>
       </Row>
       <Row className="aboutme">
@@ -48,19 +60,22 @@ const Home = () => {
         </Col>
       </Row>
       <Row className="projects">
-        <Col className="d-flex align-items-end">
+        <Col className="project-dark d-flex align-items-end">
           <div>
-            <p className="subtitle">Help-ukrainians</p>
+            <p className="subtitle">
+              Help- <br />
+              ukrainians
+            </p>
             <p className="text">
               E' un servizio gratuito a disposizione dei cittadini che permette
               la condivisione di iniziative benefiche a supporto del popolo
               ucraino. Condividiamo informazioni utili per il volontariato
               attraverso enti verificati.
             </p>
-            <img src={circlelight} />
+            <div className="circle pulsating" />
           </div>
         </Col>
-        <Col className="d-flex align-items-end">
+        <Col className="project-dark d-flex align-items-end">
           <div>
             <p className="subtitle">onlytech industries</p>
             <p className="text">
@@ -69,10 +84,10 @@ const Home = () => {
               consulenza progettuale, sviluppo e integrazione di soluzioni
               Blockchain, sicurezza, e scalabilità.
             </p>
-            <img src={circlelight} />
+            <div className="circle pulsating" />
           </div>
         </Col>
-        <Col className="d-flex align-items-end white-col">
+        <Col className="project-light d-flex align-items-end">
           <div>
             <p className="subtitle">Landing VendImpresa</p>
             <p className="text">
@@ -81,7 +96,7 @@ const Home = () => {
               composto da un gruppo di professionisti del settore che fanno
               parte di una rete di aziende tecnologicamente avanzate.
             </p>
-            <img src={circledark} />
+            <div className="circle pulsating" />
           </div>
         </Col>
       </Row>
