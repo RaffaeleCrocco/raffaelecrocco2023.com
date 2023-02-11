@@ -16,7 +16,9 @@ const Home = () => {
             <p className="mb-0">UI designer</p>&
             <span className="accent">WEB</span> DEVELOPER
           </div>
-          <p className="accent">Raffaele Crocco</p>
+          <p className="accent" style={{ marginLeft: "4.5px" }}>
+            Raffaele Crocco
+          </p>
         </Col>
         <Col
           xs="auto"
@@ -41,7 +43,7 @@ const Home = () => {
         <Col xs="auto" className="d-none d-md-block">
           <div className="circle faded" />
         </Col>
-        <Col className="mt-5">
+        <Col className="mt-5 mb-5">
           <div>
             <div className="subtitle">ABOUT ME</div>
             <div className="text">
