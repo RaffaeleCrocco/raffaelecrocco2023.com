@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import logo from "../media/logo.svg";
+import logo from "../media/logo2.svg";
 import grafica1 from "../media/grafica1.svg";
 import circlelight from "../media/circle-light.svg";
 import circledark from "../media/circle-dark.svg";
@@ -11,50 +11,56 @@ const Home = () => {
   return (
     <div className="Home">
       <Row className="hero flex-column-reverse flex-md-row">
-        <Col xs="auto" md={8} className="d-flex justify-content-start">
+        <Col xs="auto" md={8}>
           <div className="title">
-            <p>UI designer</p>& WEB DEVELOPER
+            <p className="mb-0">UI designer</p>&
+            <span className="accent">WEB</span> DEVELOPER
           </div>
+          <p className="accent">Raffaele Crocco</p>
         </Col>
         <Col
           xs="auto"
           md={4}
-          className="d-flex justify-content-start justify-content-md-end mb-5"
+          className="d-flex justify-content-start justify-content-md-end"
         >
-          {/* <img src={logo} /> */}
-          <m.div className="logodiv">
+          <img src={logo} />
+          {/* <m.div className="logodiv">
             <m.div
-            /*  animate={{
+             animate={{
                 opacity: [0, 0.7, 1],
               }}
               transition={{
                 duration: 2,
                 times: [0.1, 0.4],
-              }} */
+              }}
             ></m.div>
-          </m.div>
+          </m.div> */}
         </Col>
       </Row>
       <Row className="aboutme">
-        <Col xs="auto" className="d-none d-md-flex align-items-center">
-          <img src={grafica1} />
+        <Col xs="auto" className="d-none d-md-block">
+          <div className="circle faded" />
         </Col>
-        <Col className="d-flex flex-column justify-content-center mt-5">
+        <Col className="mt-5">
           <div>
             <div className="subtitle">ABOUT ME</div>
             <div className="text">
-              Studio ingegneria informatica all'Università di Trento. Questo
-              sito e i progetti al suo interno parlano di me e del mio viaggio
-              nel mondo della programmazione. Ecco come percepisco la
-              programmazione: come il modo più veloce per rendere reali le tue
-              idee.Duis aute irure dolor in reprehenderit in voluptate velit
-              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-              occaecat cupidatat non proident, sunt in culpa qui officia
-              deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat.
+              Laureando in Ingegneria Informatica all'
+              <a href="https://www.unitn.it/" target="_blank">
+                Università
+              </a>{" "}
+              degli Studi di Trento. Questo sito e i progetti al suo interno
+              parlano di me e del mio viaggio nel mondo della programmazione che
+              ho sempre percepito come il modo più veloce per rendere reali le
+              nostre idee. Al momento scrivo la tesi e lavoro per{" "}
+              <a href="https://www.onlytechindustries.com" target="_blank">
+                Onlytech Industries
+              </a>{" "}
+              e ai loro progetti in smart working. Sono tutta via disponibile a
+              collaborazioni Co. Co. Co. e a proposte di progetto di vario tipo.
+              Per qualsiasi informazione{" "}
+              <span className="accent">Contattami</span> o scarica il mio{" "}
+              <span className="accent">Curriculum</span>.
             </div>
           </div>
         </Col>
@@ -100,14 +106,23 @@ const Home = () => {
           </div>
         </Col>
       </Row>
-      <div className="uni-projects d-md-flex justify-content-end align-items-center p-5">
-        <p className="text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
-      </div>
+      <Row className="uni-projects p-5">
+        <Col>
+          <p className="subtitle">University related </p>
+          <p className="text">
+            In questa sezione alcuni progetti minori relativi al mio percorso
+            universitario che potrebbero essere utili per valutare competenze
+            trasversali, oltre che ai colleghi studenti ancora in facoltà.
+          </p>
+        </Col>
+
+        <Col xs="auto" className="d-flex">
+          <div className="circle" />
+          <div className="circle" />
+          <div className="circle" />
+          <div className="circle" />
+        </Col>
+      </Row>
     </div>
   );
 };
