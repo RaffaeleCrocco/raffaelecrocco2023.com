@@ -1,20 +1,32 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import logo from "../media/logo2.svg";
-import grafica1 from "../media/grafica1.svg";
-import circlelight from "../media/circle-light.svg";
-import circledark from "../media/circle-dark.svg";
-import uni from "../media/uni.svg";
+import React, { useEffect } from "react";
+import { Row, Col } from "react-bootstrap";
 import { motion as m } from "framer-motion";
 
 const Home = () => {
+  useEffect(() => {
+    Array.from(document.getElementsByClassName("path")).forEach(
+      (pathElement) => {
+        pathElement.setAttribute(
+          "style",
+          "stroke-dasharray:" +
+            pathElement.getTotalLength() +
+            ";stroke-dashoffset:" +
+            pathElement.getTotalLength()
+        );
+      }
+    );
+  }, []);
+
   return (
     <div className="Home">
       <Row className="hero flex-column-reverse flex-md-row">
         <Col xs="auto" md={8}>
           <div className="title">
             <p className="mb-0">UI designer</p>&
-            <span className="accent">WEB</span> DEVELOPER
+            <span className="accent" onClick={() => test}>
+              WEB
+            </span>{" "}
+            DEVELOPER
           </div>
           <p className="accent" style={{ marginLeft: "4.5px" }}>
             Raffaele Crocco
@@ -25,25 +37,165 @@ const Home = () => {
           md={4}
           className="d-flex justify-content-start justify-content-md-end"
         >
-          <img src={logo} />
-          {/* <m.div className="logodiv">
-            <m.div
-             animate={{
-                opacity: [0, 0.7, 1],
-              }}
-              transition={{
-                duration: 2,
-                times: [0.1, 0.4],
-              }}
-            ></m.div>
-          </m.div> */}
+          <svg
+            width="659"
+            height="516"
+            viewBox="0 0 659 516"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              class="path rect"
+              x="114"
+              y="98"
+              width="358"
+              height="358"
+              rx="22"
+              fill="#D9D9D9"
+            />
+            <circle cx="367" cy="332" r="134" fill="#111111" />
+            <circle
+              class="path"
+              cx="367"
+              cy="332"
+              r="133.5"
+              stroke="#FFB700"
+              stroke-opacity="0.5"
+            />
+            <line
+              class="path second"
+              y1="97.5"
+              x2="659"
+              y2="97.5"
+              stroke="#FFB700"
+              stroke-opacity="0.5"
+            />
+            <line
+              class="path"
+              y1="141.5"
+              x2="659"
+              y2="141.5"
+              stroke="#FFB700"
+              stroke-opacity="0.5"
+            />
+            <line
+              class="path second"
+              y1="411.5"
+              x2="659"
+              y2="411.5"
+              stroke="#FFB700"
+              stroke-opacity="0.5"
+            />
+            <line
+              class="path"
+              y1="455.5"
+              x2="659"
+              y2="455.5"
+              stroke="#FFB700"
+              stroke-opacity="0.5"
+            />
+            <line
+              class="path second"
+              x1="113.5"
+              y1="516"
+              x2="113.5"
+              y2="-3.02792e-05"
+              stroke="#FFB700"
+              stroke-opacity="0.5"
+            />
+            <line
+              class="path"
+              x1="157.5"
+              y1="516"
+              x2="157.5"
+              y2="-3.02792e-05"
+              stroke="#FFB700"
+              stroke-opacity="0.5"
+            />
+            <line
+              class="path second"
+              x1="427.5"
+              y1="516"
+              x2="427.5"
+              y2="-3.02792e-05"
+              stroke="#FFB700"
+              stroke-opacity="0.5"
+            />
+            <line
+              class="path"
+              x1="471.5"
+              y1="516"
+              x2="471.5"
+              y2="-3.02792e-05"
+              stroke="#FFB700"
+              stroke-opacity="0.5"
+            />
+            <line
+              class="path"
+              x1="500.5"
+              y1="516"
+              x2="500.5"
+              y2="-3.02792e-05"
+              stroke="#FFB700"
+              stroke-opacity="0.5"
+            />
+            <line
+              class="path"
+              x1="520.63"
+              y1="504.337"
+              x2="54.6465"
+              y2="38.3536"
+              stroke="#FFB700"
+              stroke-opacity="0.5"
+            />
+            <rect
+              class="path second"
+              x="114.5"
+              y="98.5"
+              width="43"
+              height="43"
+              rx="21.5"
+              stroke="#FFB700"
+              stroke-opacity="0.5"
+            />
+            <rect
+              class="path second"
+              x="428.5"
+              y="412.5"
+              width="43"
+              height="43"
+              rx="21.5"
+              stroke="#FFB700"
+              stroke-opacity="0.5"
+            />
+            <rect
+              class="path"
+              x="114.5"
+              y="412.5"
+              width="43"
+              height="43"
+              rx="21.5"
+              stroke="#FFB700"
+              stroke-opacity="0.5"
+            />
+            <rect
+              class="path second"
+              x="428.5"
+              y="98.5"
+              width="43"
+              height="43"
+              rx="21.5"
+              stroke="#FFB700"
+              stroke-opacity="0.5"
+            />
+          </svg>
         </Col>
       </Row>
       <Row className="aboutme">
-        <Col xs="auto" className="d-none d-md-block">
+        <Col xs="auto" className="d-none d-md-flex align-items-center">
           <div className="circle faded" />
         </Col>
-        <Col className="mt-5 mb-5">
+        <Col className=" mb-5 d-flex align-items-center">
           <div>
             <div className="subtitle">ABOUT ME</div>
             <div className="text">

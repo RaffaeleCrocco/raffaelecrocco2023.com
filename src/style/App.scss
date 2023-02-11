@@ -78,19 +78,19 @@ a {
 .hero {
   min-height: 50vh;
   padding: 7% 10% 0px 10%;
-  img {
-    height: 80%;
+  svg {
+    height: 90%;
   }
   @media only screen and (max-width: 600px) {
     min-height: 50vh;
-    img {
+    svg {
       width: 80%;
       margin-bottom: 20px;
     }
   }
 }
 .aboutme {
-  min-height: 35vh;
+  min-height: 50vh;
   padding: 0px 10% 0px 10%;
   img {
     height: 400px;
@@ -103,6 +103,7 @@ a {
     height: 159px;
     width: 159px;
     border-radius: 50%;
+    margin-top: -45%;
     cursor: pointer;
   }
 }
@@ -239,5 +240,32 @@ a {
     background-color: $text;
     opacity: 0.3;
     transform: translateY(50px);
+  }
+}
+
+//svg animation
+.path {
+  stroke-width: 2;
+  stroke: $accent;
+  fill: transparent;
+  animation: dash 1s linear;
+  animation-fill-mode: forwards;
+}
+.second {
+  animation-delay: 900ms;
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.rect {
+  animation: filling 60ms linear;
+  animation-fill-mode: forwards;
+  animation-delay: 2.05s;
+}
+@keyframes filling {
+  to {
+    fill: $text;
   }
 }
