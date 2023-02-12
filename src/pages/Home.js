@@ -298,6 +298,15 @@ const Home = () => {
       </Row>
       <div className="footer d-grid">
         <div className="separator"></div>
+        <Row>
+          <Col>
+            <p className="subtitle">raffaelecrocco.com</p>
+            Landing che anticipa il portale VendImpresa, una realta immobiliare
+            innovativa per la compravendita di asset aziendali composto da un
+            gruppo di professionisti.
+          </Col>
+          <Col></Col>
+        </Row>
       </div>
     </div>
   );
