@@ -186,6 +186,52 @@ a {
   }
 }
 
+.contact {
+  min-height: 41vh;
+  margin: 5% 10% 10% 10%;
+  background: $dark;
+  .title {
+    p {
+      font-style: italic;
+      font-weight: 400;
+    }
+    font-style: normal;
+    font-weight: 900;
+    font-size: 108px;
+    line-height: 88.52%;
+    letter-spacing: -0.015em;
+    @media only screen and (max-width: 600px) {
+      font-size: 46px;
+    }
+  }
+  .circle {
+    background: $text;
+    height: 99px;
+    width: 99px;
+    border-radius: 50%;
+    margin: 10px;
+    @media only screen and (max-width: 600px) {
+      height: 49px;
+      width: 49px;
+    }
+  }
+}
+
+.footer {
+  content: "";
+  min-height: 30vh;
+  width: 100%;
+  background: $text;
+  color: $dark;
+  .separator {
+    content: "";
+    background: $dark;
+    border-radius: 0 0 32px 32px;
+    height: 40px;
+    margin-top: -2px;
+  }
+}
+
 .logodiv {
   width: 358px;
   height: 358px;

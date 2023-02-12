@@ -23,10 +23,7 @@ const Home = () => {
         <Col xs="auto" md={8}>
           <div className="title">
             <p className="mb-0">UI designer</p>&
-            <span className="accent" onClick={() => test}>
-              WEB
-            </span>{" "}
-            DEVELOPER
+            <span className="accent">WEB</span> DEVELOPER
           </div>
           <p className="accent" style={{ marginLeft: "4.5px" }}>
             Raffaele Crocco
@@ -283,6 +280,25 @@ const Home = () => {
           <div className="circle" />
         </Col>
       </Row>
+      <Row className="contact">
+        <Col className="">
+          <div className="title">
+            <p className="mb-0">Contattami</p>&times; UN{" "}
+            <span className="accent">NUOVO</span> PROGETTO
+          </div>
+          <p className="accent" style={{ marginLeft: "4.5px" }}>
+            raffaelecrocco@info.com - 3661055047
+          </p>
+        </Col>
+        <Col className="d-flex align-items-end justify-content-end">
+          <div className="circle"></div>
+          <div className="circle"></div>
+          <div className="circle"></div>
+        </Col>
+      </Row>
+      <div className="footer d-grid">
+        <div className="separator"></div>
+      </div>
     </div>
   );
 };
