@@ -53,7 +53,13 @@ const Home = () => {
               rx="22"
               fill="#D9D9D9"
             />
-            <circle cx="367" cy="332" r="134" fill="#111111" />
+            <circle
+              class="logo-circle"
+              cx="367"
+              cy="332"
+              r="134"
+              fill="#111111"
+            />
             <circle
               class="path"
               cx="367"

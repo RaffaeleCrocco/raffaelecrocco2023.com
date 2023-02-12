@@ -1,5 +1,7 @@
-$dark: #111111; //1e1e1e
+$dark: #111111;
 $text: #d9d9d9;
+//$dark: #d9d9d9;
+//$text: #111111;
 $accent: #ffb700;
 body {
   background: $dark;
@@ -252,11 +254,11 @@ a {
   stroke-width: 2;
   stroke: $accent;
   fill: transparent;
-  animation: dash 1s linear;
+  animation: dash 600ms linear;
   animation-fill-mode: forwards;
 }
 .second {
-  animation-delay: 900ms;
+  animation-delay: 300ms;
 }
 @keyframes dash {
   to {
@@ -264,12 +266,14 @@ a {
   }
 }
 .rect {
-  animation: filling 60ms linear;
+  animation: drawing 500ms linear 1.05s;
   animation-fill-mode: forwards;
-  animation-delay: 2.05s;
 }
-@keyframes filling {
+@keyframes drawing {
   to {
     fill: $text;
   }
+}
+.logo-circle {
+  fill: $dark;
 }
