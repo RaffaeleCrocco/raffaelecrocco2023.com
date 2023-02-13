@@ -41,6 +41,12 @@ a {
 
 .App {
   overflow-x: hidden;
+  ul {
+    padding-left: 0;
+    li {
+      list-style: none;
+    }
+  }
 }
 
 .title {
@@ -223,7 +229,7 @@ a {
 
 .footer {
   content: "";
-  min-height: 30vh;
+  min-height: 25vh;
   width: 100%;
   background: $text;
   color: $dark;
@@ -235,10 +241,24 @@ a {
     margin-top: -2px;
   }
   .row {
+    img {
+      height: 35px;
+      margin-top: -6px;
+      margin-right: 10px;
+    }
     margin: 4% 10% 4% 10%;
     @media only screen and (max-width: 600px) {
       margin-top: 20%;
       margin-bottom: 20%;
+    }
+    .row {
+      margin: 0;
+      @media only screen and (max-width: 600px) {
+        margin-top: 20%;
+      }
+      .col {
+        padding: 0;
+      }
     }
     .subtitle {
       font-weight: 900;

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
 import { motion as m } from "framer-motion";
+import logo from "../media/grafica.svg";
 
 const Home = () => {
   useEffect(() => {
@@ -23,7 +24,7 @@ const Home = () => {
         <Col xs="auto" md={8}>
           <div className="title">
             <p className="mb-0">UI designer</p>&
-            <span className="accent">WEB</span> DEVELOPER
+            <span className="accent"> WEB</span> DEVELOPER
           </div>
           <p className="accent" style={{ marginLeft: "4.5px" }}>
             Raffaele Crocco
@@ -216,8 +217,10 @@ const Home = () => {
               e ai loro progetti in smart working. Sono tutta via disponibile a
               collaborazioni Co. Co. Co. e a proposte di progetto di vario tipo.
               Per qualsiasi informazione{" "}
-              <span className="accent">Contattami</span> o scarica il mio{" "}
-              <span className="accent">Curriculum</span>.
+              <a className="accent" href="#contact">
+                Contattami
+              </a>{" "}
+              o scarica il mio <span className="accent">Curriculum</span>.
             </div>
           </div>
         </Col>
@@ -280,6 +283,7 @@ const Home = () => {
           <div className="circle" />
         </Col>
       </Row>
+      <a name="contact"></a>
       <Row className="contact">
         <Col className="">
           <div className="title">
@@ -287,7 +291,7 @@ const Home = () => {
             <span className="accent">NUOVO</span> PROGETTO
           </div>
           <p className="accent" style={{ marginLeft: "4.5px" }}>
-            raffaelecrocco@info.com - 3661055047
+            Attualmente disponibile per progetti e Co. Co. Co.
           </p>
         </Col>
         <Col className="d-flex align-items-end justify-content-end">
@@ -300,12 +304,43 @@ const Home = () => {
         <div className="separator"></div>
         <Row>
           <Col>
-            <p className="subtitle">raffaelecrocco.com</p>
-            Landing che anticipa il portale VendImpresa, una realta immobiliare
-            innovativa per la compravendita di asset aziendali composto da un
-            gruppo di professionisti.
+            <p className="subtitle">
+              <img src={logo} />
+              <span className="mt-5">raffaelecrocco.com</span>
+            </p>
+            <p className="text-secondary">
+              Progettato e creato da Raffaele Crocco. <br />
+              Vedi il sito precedente <a className="text-dark">qui</a>.
+              @2022-2023
+            </p>
           </Col>
-          <Col></Col>
+          <Col>
+            <Row xs={1} md={3}>
+              <Col>
+                <b>Site map</b>
+                <ul className="text-secondary">
+                  <li>Progetti</li>
+                  <li>Università</li>
+                  <li>Contatti</li>
+                </ul>
+              </Col>
+              <Col>
+                <b>Social</b>
+                <ul className="text-secondary">
+                  <li>GitHub</li>
+                  <li>Telegram</li>
+                  <li>LinkedIn</li>
+                </ul>
+              </Col>
+              <Col>
+                <b>Contatti</b>
+                <ul className="text-secondary">
+                  <li>info@raffaelecrocco.com</li>
+                  <li>+39 3661055047</li>
+                </ul>
+              </Col>
+            </Row>
+          </Col>
         </Row>
       </div>
     </div>
