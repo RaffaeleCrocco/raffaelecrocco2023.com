@@ -244,7 +244,9 @@ const Home = () => {
               ucraino. Condividiamo informazioni utili per il volontariato
               attraverso enti verificati.
             </p>
-            <div className="circle pulsating" />
+            <a href="https://www.help-ukrainians.org/" target="_blank">
+              <div className="circle pulsating" />
+            </a>
           </div>
         </Col>
         <Col className="project-dark d-flex align-items-end">
@@ -256,7 +258,9 @@ const Home = () => {
               consulenza progettuale, sviluppo e integrazione di soluzioni
               Blockchain, sicurezza, e scalabilità.
             </p>
-            <div className="circle pulsating" />
+            <a href="https://www.onlytechindustries.com/" target="_blank">
+              <div className="circle pulsating" />
+            </a>
           </div>
         </Col>
         <Col className="project-light d-flex align-items-end">

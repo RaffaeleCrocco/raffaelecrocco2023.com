@@ -30,7 +30,9 @@ const University = () => {
               sul tema della Network Security in preparazione all'esame. Da
               usare solo a scopo educativo.
             </p>
-            <div className="circle pulsating" />
+            <a href="https://ns-training.vercel.app/" target="_blank">
+              <div className="circle pulsating" />
+            </a>
           </div>
         </Col>
         <Col className="project-dark d-flex align-items-end">
@@ -41,7 +43,12 @@ const University = () => {
               collegandosi al Wifi domestico permetta il monitoraggio delle
               proprie piante. Include 3D printing e PCB printing.
             </p>
-            <div className="circle pulsating" />
+            <a
+              href="https://github.com/RaffaeleCrocco/ecog-app"
+              target="_blank"
+            >
+              <div className="circle pulsating" />
+            </a>
           </div>
         </Col>
         <Col className="project-dark d-flex align-items-end">
@@ -53,7 +60,12 @@ const University = () => {
               permettere ad un braccio robotico controllato con ROS di
               manipolarli.
             </p>
-            <div className="circle pulsating" />
+            <a
+              href="https://github.com/RaffaeleCrocco/fundamental-of-robotic/blob/main/src/ur5/ur5_gazebo/scripts/vision.py"
+              target="_blank"
+            >
+              <div className="circle pulsating" />
+            </a>
           </div>
         </Col>
       </Row>
