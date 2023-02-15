@@ -10,7 +10,7 @@ const University = () => {
       id="top"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ ease: "easeOut", duration: 1 }}
+      transition={{ ease: "easeOut", duration: 0.6 }}
     >
       <div className="title">
         <span className="mb-0">Progetti </span>&times; l'
