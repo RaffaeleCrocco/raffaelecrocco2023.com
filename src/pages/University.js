@@ -1,17 +1,18 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
-
+import { Row, Col } from "react-bootstrap";
 import { motion as m } from "framer-motion";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 const University = () => {
   return (
     <m.div
       className="University mt-5"
+      id="top"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ ease: "easeOut", duration: 0.8, delay: 0.1 }}
     >
+      <a name="uni-top"></a>
       <div className="title">
         <span className="mb-0">Progetti </span>&times; l'
         <span className="accent">Università</span>

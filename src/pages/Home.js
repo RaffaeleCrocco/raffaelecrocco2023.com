@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
 import { motion as m } from "framer-motion";
 import logo from "../media/grafica.svg";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Home = () => {
   useEffect(() => {
@@ -272,7 +272,7 @@ const Home = () => {
           </div>
         </Col>
       </Row>
-      <Link to="/universita" onClick={() => window.scroll({ top: 0 })}>
+      <Link to="/universita#top">
         <Row className="uni-projects p-5">
           <Col>
             <p className="subtitle">University related </p>
