@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
 import { motion as m } from "framer-motion";
 import logo from "../media/grafica.svg";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   useEffect(() => {
@@ -19,7 +20,12 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="Home">
+    <m.div
+      className="Home"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ ease: "easeOut", duration: 0.8, delay: 0.1 }}
+    >
       <Row className="hero flex-column-reverse flex-md-row">
         <Col xs="auto" md={8}>
           <div className="title">
@@ -266,23 +272,25 @@ const Home = () => {
           </div>
         </Col>
       </Row>
-      <Row className="uni-projects p-5">
-        <Col>
-          <p className="subtitle">University related </p>
-          <p className="text">
-            In questa sezione alcuni progetti minori relativi al mio percorso
-            universitario che potrebbero essere utili per valutare competenze
-            trasversali, oltre che ai colleghi studenti ancora in facoltà.
-          </p>
-        </Col>
+      <Link to="/universita" onClick={() => window.scrollTo({ top: 0 })}>
+        <Row className="uni-projects p-5">
+          <Col>
+            <p className="subtitle">University related </p>
+            <p className="text">
+              In questa sezione alcuni progetti minori relativi al mio percorso
+              universitario che potrebbero essere utili per valutare competenze
+              trasversali, oltre che ai colleghi studenti ancora in facoltà.
+            </p>
+          </Col>
 
-        <Col xs="auto" className="d-flex">
-          <div className="circle" />
-          <div className="circle" />
-          <div className="circle" />
-          <div className="circle" />
-        </Col>
-      </Row>
+          <Col xs="auto" className="d-flex">
+            <div className="circle" />
+            <div className="circle" />
+            <div className="circle" />
+            <div className="circle" />
+          </Col>
+        </Row>
+      </Link>
       <a name="contact"></a>
       <Row className="contact">
         <Col className="">
@@ -343,7 +351,7 @@ const Home = () => {
           </Col>
         </Row>
       </div>
-    </div>
+    </m.div>
   );
 };
 

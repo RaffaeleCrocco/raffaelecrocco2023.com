@@ -87,6 +87,58 @@ a {
   }
 }
 
+.University {
+  .title {
+    padding: 4% 10% 0px 10%;
+    p {
+      font-size: 40px;
+      padding-top: 12px;
+      line-height: normal;
+      .circle {
+        background: none;
+        border: 2px solid $accent;
+        height: 39px;
+        width: 39px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .pulsating {
+        &:before {
+          background-color: $accent;
+        }
+      }
+    }
+    .btn {
+      background: none;
+      &:hover {
+        color: $text !important;
+      }
+    }
+    line-height: 113.52%;
+    @media only screen and (max-width: 600px) {
+      margin-bottom: 15%;
+      line-height: 103.52%;
+    }
+  }
+  .subtitle {
+    margin-bottom: 31px;
+  }
+  .projects {
+    min-height: 50vh;
+  }
+  .circle {
+    border-radius: 22px !important;
+  }
+  .circle:hover {
+    border-radius: 50% !important;
+  }
+  .pulsating {
+    &:before {
+      border-radius: 22px;
+    }
+  }
+}
+
 .hero {
   min-height: 50vh;
   padding: 7% 10% 0px 10%;
