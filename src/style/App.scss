@@ -38,6 +38,11 @@ a {
   text-decoration: none;
   color: $accent !important;
 }
+.footer {
+  a {
+    color: $dark !important;
+  }
+}
 
 .App {
   overflow-x: hidden;

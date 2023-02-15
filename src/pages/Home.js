@@ -223,10 +223,22 @@ const Home = () => {
               e ai loro progetti in smart working. Sono tutta via disponibile a
               collaborazioni Co. Co. Co. e a proposte di progetto di vario tipo.
               Per qualsiasi informazione{" "}
-              <a className="accent" href="#contact">
+              <a
+                className="accent"
+                href="mailto:info@raffaelecrocco.com"
+                target="_blank"
+              >
                 Contattami
               </a>{" "}
-              o scarica il mio <span className="accent">Curriculum</span>.
+              o scarica il mio{" "}
+              <a
+                className="accent"
+                href="https://drive.google.com/file/d/1LmRO_PmKvA5JmixvEWCpgt48N9zrNYuo/view"
+                target="_blank"
+              >
+                Curriculum
+              </a>
+              .
             </div>
           </div>
         </Col>
@@ -295,7 +307,6 @@ const Home = () => {
           </Col>
         </Row>
       </Link>
-      <a name="contact"></a>
       <Row className="contact">
         <Col className="">
           <div className="title">
@@ -322,33 +333,50 @@ const Home = () => {
             </p>
             <p className="text-secondary">
               Progettato e creato da Raffaele Crocco. <br />
-              Vedi il sito precedente <a className="text-dark">qui</a>.
-              @2022-2023
+              Vedi il sito precedente{" "}
+              <a href="https://raffaelecrocco.vercel.app/" target="_blank">
+                qui
+              </a>
+              . @2022-2023
             </p>
           </Col>
           <Col>
             <Row xs={1} md={3}>
-              <Col>
-                <b>Site map</b>
-                <ul className="text-secondary">
-                  <li>Progetti</li>
-                  <li>Università</li>
-                  <li>Contatti</li>
-                </ul>
-              </Col>
+              <Col></Col>
               <Col>
                 <b>Social</b>
                 <ul className="text-secondary">
-                  <li>GitHub</li>
-                  <li>Telegram</li>
-                  <li>LinkedIn</li>
+                  <li>
+                    <a href="https://github.com/RaffaeleCrocco" target="_blank">
+                      GitHub
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/raffaelecrocco/"
+                      target="_blank"
+                    >
+                      LinkedIn
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://t.me/raffaelecrocco" target="_blank">
+                      Telegram
+                    </a>
+                  </li>
                 </ul>
               </Col>
               <Col>
                 <b>Contatti</b>
                 <ul className="text-secondary">
-                  <li>info@raffaelecrocco.com</li>
-                  <li>+39 3661055047</li>
+                  <li>
+                    <a href="mailto:info@raffaelecrocco.com" target="_blank">
+                      info@raffaelecrocco.com
+                    </a>
+                  </li>
+                  <li>
+                    <a href="tel:+393661055047">+39 3661055047</a>
+                  </li>
                 </ul>
               </Col>
             </Row>
