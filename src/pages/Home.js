@@ -272,7 +272,7 @@ const Home = () => {
           </div>
         </Col>
       </Row>
-      <Link to="/universita" onClick={() => window.scrollTo({ top: 0 })}>
+      <Link to="/universita" onClick={() => window.scroll({ top: 0 })}>
         <Row className="uni-projects p-5">
           <Col>
             <p className="subtitle">University related </p>

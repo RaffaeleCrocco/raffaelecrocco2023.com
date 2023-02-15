@@ -91,9 +91,12 @@ a {
   .title {
     padding: 4% 10% 0px 10%;
     p {
-      font-size: 40px;
+      font-size: 32px;
       padding-top: 12px;
       line-height: normal;
+      @media only screen and (max-width: 600px) {
+        font-size: 24px;
+      }
       .circle {
         background: none;
         border: 2px solid $accent;

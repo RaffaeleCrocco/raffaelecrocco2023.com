@@ -13,7 +13,7 @@ const University = () => {
       transition={{ ease: "easeOut", duration: 0.8, delay: 0.1 }}
     >
       <div className="title">
-        <span className="mb-0">Progetti </span>&times; l'{" "}
+        <span className="mb-0">Progetti </span>&times; l'
         <span className="accent">Università</span>
         <Link to="/">
           <p className="accent d-flex align-items-center">
