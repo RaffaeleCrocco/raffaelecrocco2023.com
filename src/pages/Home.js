@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Form, Button, InputGroup } from "react-bootstrap";
 import { motion as m } from "framer-motion";
 import logo from "../media/grafica.svg";
 import { HashLink as Link } from "react-router-hash-link";
@@ -313,9 +313,38 @@ const Home = () => {
             <p className="mb-0">Contattami</p>&times; UN{" "}
             <span className="accent">NUOVO</span> PROGETTO
           </div>
-          <p className="accent" style={{ marginLeft: "4.5px" }}>
-            Attualmente disponibile per progetti e Co. Co. Co.
-          </p>
+          <Form
+            method="POST"
+            action="https://00f9c036.sibforms.com/serve/MUIEACsvzDYfDfBsTBqcYu-7AaZZOCj7oMwh1kieBTdfEcxklzR4ToDDYIHOh9TwQmh2wWSGFRs_1Zr25MYf2RwZMNrRU_tVNfLxjC9ZizK9Kvdz7VwNq0yFZx1T8oZoRQFGUmBicnz-DXER93NSLdTLMTklrqkdZFtiRCKmDqawfJQoo3TtoiTcJUW-ynCbwH7nhPG929s2ZG5k"
+          >
+            <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Text>
+                Attualmente disponibile per progetti e Co. Co. Co. Inserisci la
+                tua email, verrai presto ricontattato oppure se preferisci
+                contattami direttamente a{" "}
+                <a
+                  href="mailto:info@raffaelecrocco.com"
+                  className="accent"
+                  target="_blank"
+                >
+                  info@raffaelecrocco.com
+                </a>
+              </Form.Text>
+              <InputGroup className="mt-3">
+                <Form.Control
+                  type="email"
+                  placeholder="Inserisci la tua email"
+                  name="EMAIL"
+                  autocomplete="off"
+                  data-required="true"
+                  required
+                />
+                <Button className="accent" type="submit">
+                  Invia
+                </Button>
+              </InputGroup>
+            </Form.Group>
+          </Form>
         </Col>
         <Col className="d-flex align-items-end justify-content-end">
           <div className="circle"></div>
