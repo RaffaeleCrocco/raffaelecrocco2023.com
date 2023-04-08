@@ -3,6 +3,7 @@ import { Row, Col, Form, Button, InputGroup } from "react-bootstrap";
 import { motion as m } from "framer-motion";
 import logo from "../media/grafica.svg";
 import { HashLink as Link } from "react-router-hash-link";
+import { redirect } from "react-router-dom";
 
 const Home = () => {
   useEffect(() => {
@@ -339,7 +340,11 @@ const Home = () => {
                   data-required="true"
                   required
                 />
-                <Button className="accent" type="submit">
+                <Button
+                  className="accent"
+                  type="submit"
+                  onSubmit={() => redirect("/thanks")}
+                >
                   Invia
                 </Button>
               </InputGroup>
