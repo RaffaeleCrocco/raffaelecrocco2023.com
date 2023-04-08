@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 import { motion as m } from "framer-motion";
 import { HashLink as Link } from "react-router-hash-link";
 
@@ -12,15 +12,15 @@ const Contact = () => {
       animate={{ opacity: 1 }}
       transition={{ ease: "easeOut", duration: 0.8 }}
     >
-      <div>
-        <span className="title mb-0">Grazie di avermi contattato</span>
-        <p className="text">Verrai presto ricontattato all'indirizzo scelto.</p>
+      <Container>
+        <p className="title mb-0">Grazie di avermi contattato</p>
+        <p className="text text-end">
+          Verrai presto ricontattato all'indirizzo scelto.
+        </p>
         <Link to="/">
-          <p className="accent d-flex align-items-center">
-            <div className="circle pulsating me-2"></div>torna alla home
-          </p>
+          <p className="accent text-end">torna alla home</p>
         </Link>
-      </div>
+      </Container>
     </m.div>
   );
 };

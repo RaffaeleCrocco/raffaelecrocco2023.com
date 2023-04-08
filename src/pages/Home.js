@@ -285,7 +285,9 @@ const Home = () => {
               composto da un gruppo di professionisti del settore che fanno
               parte di una rete di aziende tecnologicamente avanzate.
             </p>
-            <div className="circle pulsating" />
+            <a href="https://www.vendimpresa.it/" target="_blank">
+              <div className="circle pulsating" />
+            </a>
           </div>
         </Col>
       </Row>
