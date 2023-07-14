@@ -278,16 +278,22 @@ const Home = () => {
         </Col>
         <Col className="project-light d-flex align-items-end">
           <div>
-            <p className="subtitle">Landing VendImpresa</p>
-            <p className="text">
-              Landing che anticipa il portale VendImpresa, una realta
-              immobiliare innovativa per la compravendita di asset aziendali
-              composto da un gruppo di professionisti del settore che fanno
-              parte di una rete di aziende tecnologicamente avanzate.
+            <p className="subtitle">
+              [deleted]
+              <br />
+              [deleted]
             </p>
-            <a href="https://www.vendimpresa.it/" target="_blank">
-              <div className="circle pulsating" />
-            </a>
+            <p className="text">
+              [This item was recenty deleted]
+              <br />
+              [This item was recenty deleted]
+              <br />
+              [This item was recenty deleted]
+              <br />
+              [This item was recenty deleted]
+            </p>
+
+            <div className="circle pulsating" />
           </div>
         </Col>
       </Row>
