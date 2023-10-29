@@ -210,20 +210,19 @@ const Home = () => {
           <div>
             <div className="subtitle">ABOUT ME</div>
             <div className="text">
-              Laureando in Ingegneria Informatica all'
+              Laureato a marzo 2023 in Ingegneria Informatica all'
               <a href="https://www.unitn.it/" target="_blank">
                 Università
               </a>{" "}
               degli Studi di Trento. Questo sito e i progetti al suo interno
               parlano di me e del mio viaggio nel mondo della programmazione che
               ho sempre percepito come il modo più veloce per rendere reali le
-              nostre idee. Al momento scrivo la tesi e lavoro per{" "}
+              nostre idee. Lavoro per un'azienda di consulenza progettuale e
+              sviluppo di soluzioni Blockchain{" "}
               <a href="https://www.onlytechindustries.com" target="_blank">
-                Onlytech Industries
+                (Onlytech Industries)
               </a>{" "}
-              e ai loro progetti in smart working. Sono tutta via disponibile a
-              collaborazioni Co. Co. Co. e a proposte di progetto di vario tipo.
-              Per qualsiasi informazione{" "}
+              e ai loro progetti in smart working. Per qualsiasi informazione{" "}
               <a
                 className="accent"
                 href="mailto:info@raffaelecrocco.com"
@@ -326,11 +325,9 @@ const Home = () => {
             method="POST"
             action="https://00f9c036.sibforms.com/serve/MUIEACsvzDYfDfBsTBqcYu-7AaZZOCj7oMwh1kieBTdfEcxklzR4ToDDYIHOh9TwQmh2wWSGFRs_1Zr25MYf2RwZMNrRU_tVNfLxjC9ZizK9Kvdz7VwNq0yFZx1T8oZoRQFGUmBicnz-DXER93NSLdTLMTklrqkdZFtiRCKmDqawfJQoo3TtoiTcJUW-ynCbwH7nhPG929s2ZG5k"
           >
-            <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Group className="mt-3" controlId="formBasicEmail">
               <Form.Text>
-                Attualmente disponibile per progetti e Co. Co. Co. Inserisci la
-                tua email, verrai presto ricontattato oppure se preferisci
-                contattami direttamente a{" "}
+                Contattami direttamente a{" "}
                 <a
                   href="mailto:info@raffaelecrocco.com"
                   className="accent"
@@ -339,7 +336,7 @@ const Home = () => {
                   info@raffaelecrocco.com
                 </a>
               </Form.Text>
-              <InputGroup className="mt-3">
+              {/* <InputGroup className="mt-3">
                 <Form.Control
                   type="email"
                   placeholder="Inserisci la tua email"
@@ -355,7 +352,7 @@ const Home = () => {
                 >
                   Invia
                 </Button>
-              </InputGroup>
+              </InputGroup> */}
             </Form.Group>
           </Form>
         </Col>
