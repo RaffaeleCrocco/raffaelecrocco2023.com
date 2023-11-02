@@ -233,7 +233,7 @@ const Home = () => {
               o scarica il mio{" "}
               <a
                 className="accent"
-                href="https://drive.google.com/file/d/1xkpNYd_fuulWVo6LUCp3XZQmmvc33QKQ/view"
+                href="https://drive.google.com/file/d/1xkpNYd_fuulWVo6LUCp3XZQmmvc33QKQ/view?usp=sharing"
                 target="_blank"
               >
                 Curriculum
